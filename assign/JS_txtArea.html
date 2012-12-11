@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validatetext_length()
+{
+	if(document.getElementById("text1").value.length>200)
+	{
+		alert("You cannot enter more then 200 characters in the text area.");
+	}
+}
+</script>
+</head>
+<body>
+<form name="myForm">
+<textarea id="text1" rows="5" cols="10"></textarea>
+<button onclick="validatetext_length()">click to validate</button>
+</form>
+</body>
+</html>

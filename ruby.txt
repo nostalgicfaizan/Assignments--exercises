@@ -1,0 +1,27 @@
+Aakash Sharma:  
+19:31:51: Aakash Sharma: Ruby Assignment :-
+------------------
+1) Write a method to calculate the factorial of a number.
+
+2) Take array of numbers as input and return squares of all the numbers as output in array format.
+
+3) Take your name as input, output should be alternate capital/small character.
+  Ex :
+  I/P : 'sachin tendulkar' 
+  O/P : 'SaChIn TeNdUlKaR' (Each word should have alternate capital/small character , first character should be capital)
+
+4) Input {:sachin_tendulkar => 'batsman', :zaheer_khan => 'bowler', :m_s_dhoni => 'wicket_keeper'}
+   Output should be :-
+   Sachin Tendulkar is a Batsman.
+   Zaheer Khan is a Bowler.
+   M S Dhoni is a Wicket Keeper.
+
+5) Create a method which should accept 2 arguments. If both arguments are :-
+i) numbers then sum it
+ii)string then concatenate it
+If both arguments are of different kind then display a appropriate error message using exception handling.
+
+6) Create a student class. Every student object should have a unique incremental roll no. , name, age, gender. Follow OOP, every attribute should have getters & setters.
+i) It should have a method to sort student objects based on name or age or roll no.
+
+7) Create a class Vehicle and initailize it with no. of wheels, color, price, brand. Create other classes like Bike, Car, Bus which should inherit from Vehical class. Also create a module method which will be use inside Vehical class, then further using inheritence by its sub-classes.

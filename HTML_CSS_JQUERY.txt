@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">
+</script>
+
+<script src="jquery.js"></script>
+
+
+<script>
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+
+
+$(document).ready(function(){
+  $("input").focus(function(){
+    $(this).css("background-color","#ffeedd");
+  });
+  $("input").blur(function(){
+    $(this).css("background-color","#ddeeee");
+  });
+});
+
+</script>
+
+</head>
+
+<body>
+
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+
+
+
+<form action="demo_form.asp" method="get">
+<h3>Select the Technology</h3>
+
+<input list="technology" name="technology">
+<datalist id="technology">
+  <option value="java">
+  <option value="oracle">
+  <option value="ruby on rails">
+  <option value="unix">
+  <option value="dot net">
+</datalist>
+<input type="submit">
+
+
+
+
+
+<h3> Enter the Credentials</h3>
+
+
+
+ <p> First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit"><br>
+  <input type="submit" formaction="demo_admin.asp" value="Submit as admin">
+</p>
+ 
+
+
+
+
+<input type="radio" name="sex" value="male">Male<br>
+<input type="radio" name="sex" value="female">Female<br><br>
+<input type="checkbox" name="job_tech" value="ruby">I works on Ruby on rails<br>
+<input type="checkbox" name="job_tech" value="oracle">I works on Oracle<br>
+<input type="checkbox" name="job_tech" value="java">I works on Java<br><br> 
+
+
+
+
+
+ Educational Qualifications
+<select name="educational qualifications">
+<option value="Bca">Bca</option>
+<option value="b.tech">B. tech</option>
+<option value="m.tech" selected="selected">M.tech</option>
+<option value="12th">12th</option>
+</select>
+
+
+ Work Experience
+<select name="Work Experience">
+<option value="fresher">Fresher</option>
+<option value="2 years">2 Years</option>
+<option value="4 YEARS" selected="selected">4 years</option>
+<option value=">4 years">> 4 years</option>
+</select>
+</form>
+
+</body>
+
+
+<form name="input" action="html_form_action.asp" method="get">
+
+<body>
+Username: <input type="text" name="user"><br>
+Password: <input type="password" name="password">
+
+
+<p><b>Note:</b> The characters in a password field are masked (shown as asterisks or circles).</p>
+
+</body>
+<input type="submit" value="Submit">
+</form>
+
+
+
+</form>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Factorial</title>
+<script>
+function validatefornumeric()
+{
+	if(isNaN(document.getElementById("text1").value))
+	{
+		alert("Please enter only numbers");
+	}
+	else
+	{
+		var x = document.getElementById("text1").value;
+		var j=1;
+		for(var i=1;i<=x;i++)
+		{
+			var j = j*i;
+		}
+		alert("The factorial of "+x+" is "+j);
+	}
+}
+</script>
+</head>
+<body>
+<input type="text" id="text1"></input>
+<button onclick="validatefornumeric()">Click here</button>
+</body>
+</html>

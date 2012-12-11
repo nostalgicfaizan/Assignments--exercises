@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+<html>
+<head>
+
+<script>
+
+function check()
+{
+    var x1 = document.getElementById("t1").value;
+	var x2 = document.getElementById("t2").value;
+	var x3 = document.getElementById("t3").value;
+
+if(x1>x2)
+	{
+		if(x1>x3)
+		{
+			document.write(x1 +  "is the largest");
+		}
+		else
+		{
+
+			document.write(x3 +  "is the largest");
+
+		}
+	}
+	else
+	{
+		if(x2>x3)
+		{
+
+			document.write(x2 +  "is the largest");
+		}
+		else
+		{
+
+			document.write(x3 +   "is the largest");
+		}
+	}
+}
+</script>
+</head>
+<body>
+<p> to check largest of 3 numbers </p>
+
+<input type="text" id = "t1"></input><br>
+<input type="text" id = "t2"></input><br>
+<input type="text" id = "t3"></input><br>
+<button type="button" onclick="check()">Click Me to find the largest of 3 Numbers!</button>
+</body>
+</html>
