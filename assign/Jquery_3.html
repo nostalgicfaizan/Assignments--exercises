@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("div").hide();
+    });
+  });
+  $(document).ready(function(){
+  $("#show").click(function(){
+    $("div").show();
+     }); 
+  });
+$(document).ready(function(){
+  $("#fadein").click(function(){
+    $("div").fadeIn();
+	  });
+	});
+	$(document).ready(function(){
+  $("#fadeout").click(function(){
+    $("div").fadeOut();
+	   });
+    });
+$(document).ready(function(){
+  $("#toggle").click(function(){
+    $("div").toggle();
+	   });
+    });
+$(document).ready(function(){
+  $("#slideUp").click(function(){
+    $("div").slideUp();
+	   });
+    });
+$(document).ready(function(){
+  $("#slidedown").click(function(){
+    $("div").slideDown();
+	   });
+    });
+
+
+
+</script>
+</head>
+<body>
+
+<div style="background:#ffee58;height:100px;width:100px;position:absolute;">
+</div>
+<br><br><br><br>
+<br><br><br>
+
+<h3>This is a Demo.Click on the buttons below to use the features associated.!</h3>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<button id="toggle">Toggle</botton>
+<button id="fadeout">Fade out</button>
+<button id="fadein">Fade In</button>
+<button id="slideUp">Slide Up</button>
+<button id="slidedown">Slide Down</button>
+</body>
+</html>
