@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @drumy.name %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @drumy.title %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @drumy.content %>
+</p>
+
+
+<%= link_to 'Edit', edit_drumy_path(@drumy) %> |
+<%= link_to 'Back', drumies_path %>

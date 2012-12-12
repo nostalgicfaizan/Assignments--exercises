@@ -1,0 +1,27 @@
+<h1>Listing drumies</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Title</th>
+    <th>Content</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @drumies.each do |drumy| %>
+  <tr>
+    <td><%= drumy.name %></td>
+    <td><%= drumy.title %></td>
+    <td><%= drumy.content %></td>
+    <td><%= link_to 'Show', drumy %></td>
+    <td><%= link_to 'Edit', edit_drumy_path(drumy) %></td>
+    <td><%= link_to 'Destroy', drumy, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Drumy', new_drumy_path %>
